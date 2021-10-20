@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: APPLIANCE-SERVICE
+  h2:
+    console:
+      enabled:true
+  datasource:
+    url:
+      jdbc:h2:mem:test
+    data:
+      classpath: data.sql
+  jpa:
+    databasePlatform: org.hibernate.dialect.H2Dialect
+    show-sql: true
